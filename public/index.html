@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="customDirs">
+<head>
+  <title>Custom Directives! Practice: Build a Simple E-commerce Website using AngularJS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="mainCtrl">
+  <h1 class="o">.Watch Store.</h1>
+  <div class="y" ng-repeat="item in list"> <{{item.name}}<img src={{item.url}}>{{item.description}}{{item.cost}}</div>
+
+  <input type="text" ng-model="test"></input>
+
+  {{test1}}
+  <main-dir test="test1">
+
+
+  </main-dir>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+<!-- ng-hide -->
+
+<!--  ng-show -->
+<!--  ng-repeat filter orderBy-->
+<!--  click, dblclick-->
+
+<script src="app.js" charset="utf-8"></script>
+<script src="mainCtrl.js" charset="utf-8"></script>
+<script src="mainServ.js" charset="utf-8"></script>
+<script src="mainDir.js" charset="utf-8"></script>
+<script src="dirCtrl.js" charset="utf-8"></script>
+<items-list>
+  <ul>x</ul><ul>y</ul><ul>z</ul>
+  <ul>p</ul><ul>r</ul><ul>s</ul>
+  <ul>i</ul><ul>t</ul>
+  <ul>v</ul><ul>m</ul><ul>e</ul>
+</ul>
+  <div class= "img">
+    <img ng-hide src="https://s-media-cache-ak0.pinimg.com/736x/14/dd/5a/14dd5ae9122b8d72365f87e7e24a60a0.jpg" alt="Omega"/>
+  <img ng-click src="http://humblewatches.com/wp-content/uploads/2015/09/best-2016-Longines-Watches.jpg" alt="Longines"/>
+  <img ng-click src="http://edgecdn.shinola.com/shop/media/catalog/product/f/0/f0110000343_f2_1150x1150.jpg" alt="Shinola"/></div>
+</items-list>
+
+
+</body>
+</html>
